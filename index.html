@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fajar Dwi A. | Front End Engineer</title>
+    <link rel="icon" href="./img/logos.png" type="image/icon type" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- goole font import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&family=Open+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- import font awesome 4.5.0 -->
+    <link
+      rel="stylesheet"
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              nunito: ["Nunito"],
+              openSans: ["Open Sans"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header class="sticky top-0 z-40 bg-[#395b64]">
+      <!-- container max-width 1280px-->
+      <div class="mx-auto px-4 max-w-7xl">
+        <!-- navbar wrapper .fajar-header-->
+        <div class="flex-none md:flex items-center justify-between py-4">
+          <!-- navbar kiri (logo)  -->
+          <div class="flex items-center justify-center pb-3 md:pb-0">
+            <a href="index.html">
+              <!-- logo-header -->
+              <div class="text-center">
+                <img class="w-9 md:w-12" src="./img/logos.png" alt="" />
+              </div>
+            </a>
+            <p
+              class="text-xl md:text-2xl ml-2 font-nunito font-bold text-white tracking-wider"
+            >
+              FAJAR
+            </p>
+          </div>
+          <!-- navbar kanan -->
+          <div class="text-center md:grid md:grid-flow-col">
+            <div
+              class="py-2 pr-2 mx-4 font-openSans font-medium tracking-widest text-white text-base hover:text-[#f9f871] hover:-translate-y-[0.100rem]"
+            >
+              <a href="#aboutMe">About</a>
+            </div>
+            <div
+              class="py-2 pr-2 mx-4 font-openSans font-medium tracking-widest text-white text-base hover:text-[#f9f871] hover:-translate-y-[0.100rem]"
+            >
+              <a href="#experience">Experience</a>
+            </div>
+            <div
+              class="py-2 pr-2 mx-4 font-openSans font-medium tracking-widest text-white text-base hover:text-[#f9f871] hover:-translate-y-[0.100rem]"
+            >
+              <a href="#my-projects">Projects</a>
+            </div>
+            <div
+              class="py-2 pr-2 mx-4 font-openSans font-medium tracking-widest text-white text-base blghover:text-[#f9f871] hover:-translate-y-[0.100rem]"
+            >
+              <a href="#">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="bg-transparent">
+      <!--Banner-->
+      <article class="pb-20">
+        <!-- Background under card-->
+        <div class="bg-[#395b64] w-[100%] h-96 absolute z-10"></div>
+        <!--Start: Container -->
+        <div class="mx-auto px-4 max-w-7xl">
+          <!-- Start: Card Photo overlay background-->
+          <div
+            class="bg-[url('./img/paris-overlay.png')] bg-cover py-28 px-6 md:px-12 rounded-3xl z-30 relative flex flex-col-reverse lg:flex-row items-center"
+          >
+            <!--banner content wrapper-->
+            <div class="max-w-md block pt-8 lg:pt-0 mx-auto my-auto">
+              <p
+                class="text-white text-base font-openSans tracking-wide opacity-80"
+              >
+                <span
+                  class="fa fa-map-marker text-white mr-2"
+                  aria-hidden="true"
+                ></span
+                >Bekasi Regency, Indones5a
+              </p>
+              <h1
+                class="font-nunito font-bold text-4xl md:text-5xl tracking-wide text-white mt-4 opacity-80"
+              >
+                Hallo, I am
+              </h1>
+              <h1
+                class="font-nunito font-bold text-5xl md:text-[56px] tracking-wide text-white mt-3 opacity-80"
+              >
+                FAJAR DWI A.
+              </h1>
+              <p
+                class="text-white mt-4 lg:mt-2 font-openSans text-base lg:text-lg opacity-80"
+              >
+                I am a Front End Engineer Student at Ruangguru CAMP program by
+                Ruangguru x Kampus Merdeka.<br />
+                I learn more about Web Development, Database Programming and
+                Data Structure.
+              </p>
+              <!--button wrapper-->
+              <div class="mt-8 text-white font-nunito text-base md:text-lg">
+                <a
+                  target="_blank"
+                  class="inline-block px-6 py-2 bg-transparent border-[1px] rounded-md mr-5 opacity-80 hover:bg-white/30 shadow transform transition active:bg-white/50 hover:-translate-y-0.5"
+                  href="https://www.linkedin.com/in/fajardwia/"
+                  ><span
+                    class="fa fa-linkedin-square mr-2"
+                    aria-hidden="true"
+                  ></span
+                  >Linked In</a
+                >
+                <a
+                  target="_blank"
+                  class="inline-block px-6 py-2 bg-transparent border-[1px] rounded-md opacity-80 hover:bg-white/30 shadow transform transition active:bg-white/50 hover:-translate-y-0.5"
+                  href="https://github.com/fajaragstr/"
+                  ><span
+                    class="fa fa-github-square mr-2"
+                    aria-hidden="true"
+                  ></span
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <!--pass photo wrapper-->
+            <div class="mx-auto">
+              <img
+                class="mx-auto rounded-full object-cover object-center w-[240px] md:w-[360px] lg:w-[420px]"
+                src="./img/pass-foto.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <!--End: Container-->
+        </div>
+      </article>
+      <!--About Me Article-->
+      <article id="aboutMe" class="pb-20">
+        <!--Start: Container About Me  -->
+        <div class="mx-auto px-4 max-w-7xl">
+          <!-- head article about me-->
+          <div
+            class="text-center mt-20 mb-10 font-nunito font-bold text-3xl text-[#395b64]"
+          >
+            <h2>About Me</h2>
+          </div>
+          <p
+            class="text-center mb-4 max-w-xl md:max-w-2xl lg:max-w-3xl mx-auto text-[#2c3333] text-base md:text-lg font-openSans"
+          >
+            An
+            <strong class="text-[#500000]"
+              >University of Singaperbangsa Karawang</strong
+            >
+            college student at Faculty of Computer Science on Informatics
+            Engineering and learn more about Web Development, Database
+            Programming and Data Structure. Skilled in UI Design and then
+            interested in learning Front-End Web, because I want to implement
+            the UI design into website page. I'm excited to learn more about
+            anything that makes me thrive.
+          </p>
+          <p
+            class="text-center mb-4 max-w-2xl mx-auto text-[#2c3333] text-base md:text-lg font-openSans"
+          >
+            I passionate in creating web application, I have curiosity how to
+            software is made. currently I study in Ruangguru CAMP program for 4
+            months, I learned a lot about HTML and CSS, JavaScript Programming,
+            Consuming Web API’s, React. js, etc.
+          </p>
+        </div>
+      </article>
+      <!--Experience Article-->
+      <article id="experience" class="pb-20">
+        <!--Start: Container -->
+        <div class="mx-auto px-4 max-w-7xl">
+          <!-- head article about me-->
+          <div
+            class="text-center mt-20 mb-10 font-nunito font-bold text-3xl text-[#395b64]"
+          >
+            <h2>Experience</h2>
+          </div>
+          <!--experience wrapper-->
+          <div
+            class="grid grid-rows-1 md:grid-cols-1 gap-8 md:gap-7 max-w-5xl mx-auto"
+          >
+            <section class="flex flex-col md:flex-row">
+              <!--image1-->
+              <div class="w-full sm:w-3/4 md:w-1/2 mx-auto">
+                <div
+                  class="bg-[url(./img/Ruangguru.jpg)] bg-cover object-center w-full h-[270px] sm:h-[350px] md:h-[300px] rounded-xl"
+                ></div>
+              </div>
+              <!--right content-->
+              <div class="w-full sm:w-3/4 md:w-1/2 md:ml-8 mx-auto">
+                <h3
+                  class="font-nunito font-bold text-2xl mt-4 md:mt-0 text-[#2c3333]"
+                >
+                  Front End Engineering Student at Ruangguru
+                </h3>
+                <p class="font-nunito mt-2">
+                  <strong>2022 Agustus - Sekarang</strong>
+                </p>
+                <p class="mt-4 text-[#2c3333] font-openSans text-base">
+                  Learned how to create hight quality website applications for
+                  Front End side. I study fundamental web development using HTML
+                  and CSS also JavaScript. I study to create front end website
+                  using React. js, Node. js for Web Api, and made simple RESTful
+                  API and then deploy the web apps to Netlify.
+                </p>
+              </div>
+            </section>
+            <section class="flex flex-col md:flex-row">
+              <!--image 2-->
+              <div class="w-full sm:w-3/4 md:w-1/2 mx-auto">
+                <div
+                  class="bg-[url(./img/Skilvul.jpg)] bg-cover object-center w-full h-[270px] sm:h-[350px] md:h-[300px] rounded-xl"
+                ></div>
+              </div>
+              <!-- right content-->
+              <div class="w-full sm:w-3/4 md:w-1/2 md:ml-8 mx-auto">
+                <h3
+                  class="font-nunito font-bold text-2xl mt-4 md:mt-0 text-[#2c3333]"
+                >
+                  UI/UX Designer Intern at Skilvul
+                </h3>
+                <p class="font-nunito mt-2">
+                  <strong>2021 Agustus - 2021 Desember</strong>
+                </p>
+                <p class="mt-4 text-[#2c3333] font-openSans text-base">
+                  I Learn how to design the apps for user experience more better
+                  using design thinking method, I emphasizing stage for user
+                  research, and then I define the problem using How-Might We
+                  framework, and then Ideation stages to create Lo-Fi Wireframe,
+                  and the designing for User Interface.
+                </p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </article>
+      <!--Project Article-->
+      <article id="my-projects" class="pb-20">
+        <!--Container of project article-->
+        <div class="mx-auto px-4 max-w-7xl">
+          <!--Head Project Article -->
+          <div
+            class="text-center mt-20 mb-10 font-nunito font-bold text-3xl text-[#395b64]"
+          >
+            <h2>My Recents Works</h2>
+          </div>
+          <!--card wrapper-->
+          <div
+            class="flex box-border flex-row justify-center flex-wrap gap-y-8"
+          >
+            <!--Card 1-->
+            <section
+              class="basis-[25%] min-w-[300px] p-8 mx-4 bg-white rounded-3xl shadow-md"
+            >
+              <img
+                class="w-full h-[200px] object-cover object-center"
+                src="https://miro.medium.com/max/1400/1*YQgTGDIUc58ti4J0l8z8cQ.png"
+                alt=""
+              />
+              <h3
+                class="text-[#395b64] font-nunito font-bold text-base mt-3 max-w-full"
+              >
+                UX Case Study: CodeCamp Academy — Designing Online Course for
+                Mobile Apps
+              </h3>
+              <div class="block mx-auto text-center">
+                <a
+                  target="_blank"
+                  href="https://medium.com/@fajardwagstr/ux-case-study-codecamp-academy-membuat-apps-kursus-online-a683c5c965c"
+                  class="inline-block text-center mt-4 py-2 px-4 text-[#2c3333] bg-[#f9f871] rounded-lg hover:bg-[#f8f848] text-sm"
+                  >Show More<span
+                    class="fa fa-external-link ml-2"
+                    aria-hidden="true"
+                  ></span
+                ></a>
+              </div>
+            </section>
+            <!--Card 2-->
+            <section
+              class="basis-[25%] min-w-[300px] p-8 mx-4 bg-white rounded-3xl shadow-md"
+            >
+              <img
+                target="_blank"
+                class="w-full h-[200px] object-cover object-left"
+                src="https://miro.medium.com/max/1400/1*DQ-2MD1Lg6Gm3KwaXTi0Uw.jpeg"
+                alt=""
+              />
+              <h3
+                class="text-[#395b64] font-nunito font-bold text-base mt-3 max-w-full"
+              >
+                UX Case Study —  Improvements and Re-designing for Waste4Change
+                Mobile Responsive Website
+              </h3>
+              <div class="block mx-auto text-center">
+                <a
+                  href="https://medium.com/@fajardwagstr/ux-case-study-improvements-and-re-designing-for-waste4change-mobile-responsive-website-5de23b2921ca"
+                  class="inline-block text-center mt-4 py-2 px-4 text-[#2c3333] bg-[#f9f871] rounded-lg hover:bg-[#f8f848] text-sm"
+                  >Show More<span
+                    class="fa fa-external-link ml-2"
+                    aria-hidden="true"
+                  ></span
+                ></a>
+              </div>
+            </section>
+            <!--Card 3-->
+            <section
+              class="basis-[25%] min-w-[300px] p-8 mx-4 bg-white rounded-3xl shadow-md"
+            >
+              <img
+                targer="https://progate-basic.netlify.app/"
+                class="w-full h-[200px] object-cover object-center"
+                src="https://d2aj9sy12tbpym.cloudfront.net/progate/shared/images/slide/html/study/2/149793538420.png"
+                alt=""
+              />
+              <h3
+                class="text-[#395b64] font-nunito font-bold text-base mt-3 max-w-full"
+              >
+                Basic HTML & CSS Responsive Website
+              </h3>
+              <div class="block mx-auto text-center">
+                <a
+                  href=""
+                  class="inline-block text-center mt-4 py-2 px-4 text-[#2c3333] bg-[#f9f871] rounded-lg hover:bg-[#f8f848] text-sm"
+                  >Show More<span
+                    class="fa fa-external-link ml-2"
+                    aria-hidden="true"
+                  ></span
+                ></a>
+              </div>
+            </section>
+            <!--Card 4-->
+            <section
+              class="basis-[25%] min-w-[300px] p-8 mx-4 bg-white rounded-3xl shadow-md"
+            >
+              <img
+                class="w-full h-[200px] object-cover object-center"
+                src="https://i.ytimg.com/vi/-sAAa-CCOcg/maxresdefault.jpg"
+                alt=""
+              />
+              <h3
+                class="text-[#395b64] font-nunito font-bold text-base mt-3 max-w-full"
+              >
+                UI/UX Design Exercise: Mony Apps —  A simple e-wallet mobile
+                apps prototyping
+              </h3>
+              <div class="block mx-auto text-center">
+                <a
+                  target="_blank"
+                  href="https://www.figma.com/proto/rAOnEhIXsD2JnDnqvtMWbX/Mony-Apps?node-id=65%3A369&scaling=scale-down&page-id=37%3A155&starting-point-node-id=65%3A369"
+                  class="inline-block text-center mt-4 py-2 px-4 text-[#2c3333] bg-[#f9f871] rounded-lg hover:bg-[#f8f848] text-sm"
+                  >Show More<span
+                    class="fa fa-external-link ml-2"
+                    aria-hidden="true"
+                  ></span
+                ></a>
+              </div>
+            </section>
+            <!--Card 5-->
+            <section
+              class="basis-[25%] min-w-[300px] p-8 mx-4 bg-white rounded-3xl shadow-md"
+            >
+              <img
+                class="w-full h-[200px] object-cover object-center"
+                src="https://img.freepik.com/free-vector/programmers-using-javascript-programming-language-computer-tiny-people-javascript-language-javascript-engine-js-web-development-concept_335657-2412.jpg?w=740&t=st=1664443334~exp=1664443934~hmac=5338c04ebb855ad678f91f5b3e3c52a3235bbadc61f0cc83354fe5e0b5a91844"
+                alt=""
+              />
+              <h3
+                class="text-[#395b64] font-nunito font-bold text-base mt-3 max-w-full"
+              >
+                A simple landing page website using React. js
+              </h3>
+              <div class="block mx-auto text-center">
+                <a
+                  href=""
+                  class="inline-block text-center mt-4 py-2 px-4 text-[#2c3333] bg-[#f9f871] rounded-lg hover:bg-[#f8f848] text-sm"
+                  >Show More<span
+                    class="fa fa-external-link ml-2"
+                    aria-hidden="true"
+                  ></span
+                ></a>
+              </div>
+            </section>
+          </div>
+        </div>
+      </article>
+      <!--Contact Article-->
+      <article class="pb-20">
+        <!--Container Contact-->
+        <div class="mx-auto px-4 max-w-7xl">
+          <!--Wrapper-->
+          <div class="mt-10 flex flex-col lg:flex-row items-center">
+            <!--left content-->
+            <div class="basis-1/2">
+              <div class="mx-auto w-2/3">
+                <h2
+                  class="font-nunito font-bold text-3xl text-[#395b64] text-center md:text-left"
+                >
+                  Contact Me
+                </h2>
+                <p
+                  class="font-openSans text-lg text-[#2c3333] mt-6 text-center md:text-left"
+                >
+                  Let’s work with me or need help for
+                  <br class="hidden md:inline" />
+                  your project.
+                </p>
+              </div>
+            </div>
+            <!--right content-->
+            <section class="basis-1/2">
+              <form
+                class="bg-[#f0f0f0] mx-auto lg:w-2/3 max-w-2/3 p-6 rounded-xl mt-10 lg:mt-0 shadow-lg"
+                action=""
+              >
+                <label class="block mb-2 text-[#2c3333]" for="fname"
+                  >Your Name</label
+                >
+                <input
+                  class="w-full text-sm rounded-lg p-3 border-0 mb-3"
+                  type="text"
+                  name="fname"
+                  placeholder="John Doe"
+                />
+                <label class="block mb-2 text-[#2c3333]" for="email"
+                  >Your E-mail</label
+                >
+                <input
+                  class="w-full text-sm rounded-lg p-3 border-0 mb-3"
+                  type="text"
+                  name="email"
+                  placeholder="example@email.com"
+                />
+                <label class="block mb-2 text-[#2c3333]" for="message"
+                  >Message</label
+                >
+                <textarea
+                  class="w-full text-sm rounded-lg p-3 border-0 mb-3"
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="7"
+                  name="message"
+                  placeholder="Write the message here"
+                ></textarea>
+                <!-- <button
+                  class="bg-[#f9f871] hover:bg-[#f8f848]/90 active:bg-green-500 hover:-translate-y-[0.100rem] py-3 mt-5 rounded-lg w-full cursor-pointer inline"
+                >
+                  <a class="active:text-white tracking-wider font-bold" href=""
+                    >Send</a
+                  >
+                </button> -->
+                <a
+                  class="inline-block w-full text-center px-5 py-3 rounded-lg bg-[#f9f871] hover:bg-[#f8f848] hover:-translate-y-0.5 focus:outline-none focus:ring focus:ring-offset-2 focus:ring-slate-500 focus:ring-opacity-50 transform transition text-[#2c3333] uppercase tracking-wider font-bold font-openSans text-sm"
+                  href=""
+                  >Send</a
+                >
+              </form>
+            </section>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer class="bg-[#395b64]">
+      <!--Container Footer-->
+      <div class="mx-auto px-4 max-w-7xl">
+        <!--footer upper-->
+        <div
+          class="py-6 flex flex-col items-center sm:flex-row justify-between"
+        >
+          <div class="flex items-center justify-center pb-3 md:pb-0">
+            <a href="index.html">
+              <!-- logo-header -->
+              <div class="text-center">
+                <img class="w-9 md:w-12" src="./img/logos.png" alt="" />
+              </div>
+            </a>
+            <p
+              class="text-xl md:text-2xl ml-2 font-nunito font-bold text-white tracking-wider opacity-80"
+            >
+              FAJAR
+            </p>
+          </div>
+          <div class="flex flex-col sm:flex-row items-center">
+            <h3
+              class="font-nunito text-lg text-white/80 mt-4 sm:mt-0 font-light sm:font-bold mr-0 sm:mr-5"
+            >
+              Follow us:
+            </h3>
+            <div class="grid grid-cols-2 gap-5">
+              <a
+                class="hover:-translate-y-0.5"
+                href="https://www.linkedin.com/in/fajardwia/"
+                target="_blank"
+              >
+                <span
+                  class="fa fa-linkedin-square inline text-center rounded-full text-2xl text-[#fff]/80"
+                ></span>
+              </a>
+              <a
+                class="hover:-translate-y-0.5"
+                href="https://github.com/fajaragstr/"
+                target="_blank"
+              >
+                <span
+                  class="fa fa-github-square inline text-center rounded-full text-2xl text-[#ffff]/80"
+                ></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="font-openSans text-center text-sm bg-black/20 text-white/80 py-3"
+      >
+        <p>&copy; 2022 Fajar. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
