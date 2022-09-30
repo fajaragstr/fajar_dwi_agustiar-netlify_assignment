@@ -38,9 +38,9 @@
       <!-- container max-width 1280px-->
       <div class="mx-auto px-4 max-w-7xl">
         <!-- navbar wrapper .fajar-header-->
-        <div class="flex-none md:flex items-center justify-between py-4">
+        <div class="flex items-center justify-between py-4">
           <!-- navbar kiri (logo)  -->
-          <div class="flex items-center justify-center pb-3 md:pb-0">
+          <div class="flex items-center justify-center">
             <a href="index.html">
               <!-- logo-header -->
               <div class="text-center">
@@ -53,8 +53,11 @@
               FAJAR
             </p>
           </div>
+          <div class="text-white/80 inline-block md:hidden text-2xl">
+            <span class="fa fa-bars cursor-pointer"></span>
+          </div>
           <!-- navbar kanan -->
-          <div class="text-center md:grid md:grid-flow-col">
+          <div class="text-center hidden md:grid md:grid-flow-col mr-[-16px]">
             <div
               class="py-2 pr-2 mx-4 font-openSans font-medium tracking-widest text-white text-base hover:text-[#f9f871] hover:-translate-y-[0.100rem]"
             >
@@ -73,7 +76,7 @@
             <div
               class="py-2 pr-2 mx-4 font-openSans font-medium tracking-widest text-white text-base blghover:text-[#f9f871] hover:-translate-y-[0.100rem]"
             >
-              <a href="#">Contact</a>
+              <a href="#contact-me">Contact</a>
             </div>
           </div>
         </div>
@@ -99,7 +102,7 @@
                   class="fa fa-map-marker text-white mr-2"
                   aria-hidden="true"
                 ></span
-                >Bekasi Regency, Indones5a
+                >Bekasi Regency, Indonesia
               </p>
               <h1
                 class="font-nunito font-bold text-4xl md:text-5xl tracking-wide text-white mt-4 opacity-80"
@@ -331,7 +334,6 @@
               class="basis-[25%] min-w-[300px] p-8 mx-4 bg-white rounded-3xl shadow-md"
             >
               <img
-                targer="https://progate-basic.netlify.app/"
                 class="w-full h-[200px] object-cover object-center"
                 src="https://d2aj9sy12tbpym.cloudfront.net/progate/shared/images/slide/html/study/2/149793538420.png"
                 alt=""
@@ -343,7 +345,8 @@
               </h3>
               <div class="block mx-auto text-center">
                 <a
-                  href=""
+                  target="_blank"
+                  href="https://progate-basic.netlify.app/"
                   class="inline-block text-center mt-4 py-2 px-4 text-[#2c3333] bg-[#f9f871] rounded-lg hover:bg-[#f8f848] text-sm"
                   >Show More<span
                     class="fa fa-external-link ml-2"
@@ -408,7 +411,7 @@
         </div>
       </article>
       <!--Contact Article-->
-      <article class="pb-20">
+      <article id="contact-me" class="pb-20">
         <!--Container Contact-->
         <div class="mx-auto px-4 max-w-7xl">
           <!--Wrapper-->
@@ -417,15 +420,15 @@
             <div class="basis-1/2">
               <div class="mx-auto w-2/3">
                 <h2
-                  class="font-nunito font-bold text-3xl text-[#395b64] text-center md:text-left"
+                  class="font-nunito font-bold text-3xl text-[#395b64] text-center lg:text-left"
                 >
                   Contact Me
                 </h2>
                 <p
-                  class="font-openSans text-lg text-[#2c3333] mt-6 text-center md:text-left"
+                  class="font-openSans text-lg text-[#2c3333] mt-6 text-center lg:text-left"
                 >
                   Let’s work with me or need help for
-                  <br class="hidden md:inline" />
+                  <br class="hidden lg:inline" />
                   your project.
                 </p>
               </div>
